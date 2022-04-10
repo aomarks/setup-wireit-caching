@@ -1,0 +1,5 @@
+name: 'Setup GitHub Actions Caching for Wireit'
+description: 'Setup GitHub Actions Caching for Wireit'
+runs:
+  using: 'node16'
+  main: 'index.js'
