@@ -1,11 +1,5 @@
 name: 'Setup GitHub Actions Caching for Wireit'
 description: 'Setup GitHub Actions Caching for Wireit'
 runs:
-  using: 'composite'
-  steps:
-    - shell: bash
-      run: |
-        echo "WIREIT_CACHE=github" >> $GITHUB_ENV
-        echo "ACTIONS_CACHE_URL=$ACTIONS_CACHE_URL" >> $GITHUB_ENV
-        echo "ACTIONS_RUNTIME_TOKEN=$ACTIONS_RUNTIME_TOKEN" >> $GITHUB_ENV
-        cat $GITHUB_ENV
+  using: 'node16'
+  main: 'index.js'
